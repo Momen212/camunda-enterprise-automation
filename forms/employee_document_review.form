@@ -1,0 +1,23 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.9.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "3543595"
+  },
+  "schemaVersion": 19,
+  "id": "form-1d5ekca",
+  "components": [
+    {
+      "label": "Kunde angenommen?",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_12ia8n7",
+        "columns": null
+      },
+      "id": "Field_0ee81j6",
+      "key": "Kunde"
+    }
+  ],
+  "type": "default"
+}

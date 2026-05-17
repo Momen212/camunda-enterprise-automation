@@ -1,0 +1,63 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.9.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "3543595"
+  },
+  "schemaVersion": 19,
+  "id": "neukunde-beantragen-0f8fht6",
+  "components": [
+    {
+      "label": "Name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_148k57r",
+        "columns": null
+      },
+      "id": "Field_0h024y0",
+      "key": "Name"
+    },
+    {
+      "label": "Alter",
+      "type": "number",
+      "layout": {
+        "row": "Row_1yd9ddv",
+        "columns": null
+      },
+      "id": "Field_0z9zr1l",
+      "key": "Alter"
+    },
+    {
+      "label": "Raucher",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_0vmwlff",
+        "columns": null
+      },
+      "id": "Field_1pyg7z7",
+      "key": "Raucher"
+    },
+    {
+      "label": "Vorerkrankungen",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_1n81fvz",
+        "columns": null
+      },
+      "id": "Field_04mq5cv",
+      "key": "Vorerkrankungen"
+    },
+    {
+      "label": "Vorerkankungen beschreiben",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_0il3q75",
+        "columns": null
+      },
+      "id": "Field_0i90o4h",
+      "key": "Beschreibung"
+    }
+  ],
+  "type": "default"
+}

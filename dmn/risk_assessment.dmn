@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" id="Definitions_1pxp2nn" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Web Modeler" exporterVersion="3543595" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.9.0">
+  <decision id="decision-061eerb" name="Faktoren Prüfen">
+    <decisionTable id="DecisionTable_1uc1m3f" hitPolicy="FIRST">
+      <input id="Input_1" label="Alter">
+        <inputExpression id="InputExpression_1" typeRef="number">
+          <text>Alter</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1esu3c6" label="Raucher">
+        <inputExpression id="LiteralExpression_1hvvo48" typeRef="boolean">
+          <text>Raucher</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1r9bsxn" label="Vorerkrankungen">
+        <inputExpression id="LiteralExpression_0jy8gb7" typeRef="boolean">
+          <text>Vorerkrankungen</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Risiko" name="Risiko" typeRef="string" biodi:width="192" />
+      <rule id="DecisionRule_0auy60v">
+        <description>hohes Risiko</description>
+        <inputEntry id="UnaryTests_16jx28m">
+          <text>&gt;65</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0k10ndl">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1tylhu5">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ke6bn8">
+          <text>"hoch"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0wysdg1">
+        <description>hohes Risiko</description>
+        <inputEntry id="UnaryTests_0qsol9i">
+          <text>&gt;65</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_04djocg">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0snta5b">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1f8z7sj">
+          <text>"hoch"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_03vxzpn">
+        <description>hohes Risiko</description>
+        <inputEntry id="UnaryTests_1jaq0s1">
+          <text>&gt;65</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1py0shi">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15b3k62">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0y3vuyu">
+          <text>"hoch"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_134n8gw">
+        <description>hohes Risiko</description>
+        <inputEntry id="UnaryTests_0v7rfn1">
+          <text>&lt;=65</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_11z70au">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_01gtkjr">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1f56q0p">
+          <text>"hoch"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0fwi7uf">
+        <description>moderates Risiko</description>
+        <inputEntry id="UnaryTests_1c9ffq9">
+          <text>&gt;65</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17mfioc">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0s08ax5">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1uwrj1k">
+          <text>"moderat"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ycvrel">
+        <description>moderates Risiko</description>
+        <inputEntry id="UnaryTests_1murq2v">
+          <text>&lt;=65</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0qiv0y1">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0rfwq5j">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_066vbe0">
+          <text>"moderat"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1w1pset">
+        <description>moderates Risiko</description>
+        <inputEntry id="UnaryTests_1s2fvie">
+          <text>&lt;=65</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1357436">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0zp46uo">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_12wpuuo">
+          <text>"moderat"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_04q5ue0">
+        <description>geringes Risiko</description>
+        <inputEntry id="UnaryTests_1pk57e8">
+          <text>&lt;=65</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_048wclf">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_04xak4b">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1a3gq1g">
+          <text>"gering"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="decision-061eerb">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
