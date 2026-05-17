@@ -17,9 +17,7 @@ camunda-insurance-process/
 ├── forms/
 │   ├── new_customer_application.form
 │   └── employee_document_review.form
-├── docs/
-│   └── new_dmn_diagram_draft.dmn
-├── .gitignore
+|
 └── README.md
 ```
 
@@ -61,7 +59,6 @@ camunda-insurance-process/
 | `dmn/risk_assessment.dmn` | Entscheidungstabelle zur Risikobewertung |
 | `forms/new_customer_application.form` | Formular zur Erfassung von Kundendaten |
 | `forms/employee_document_review.form` | Formular für die manuelle Prüfung durch Mitarbeitende |
-| `docs/new_dmn_diagram_draft.dmn` | Zusätzlicher DMN-Entwurf / Arbeitsstand |
 
 ## Ausführen / Öffnen
 
@@ -82,8 +79,3 @@ Dieses Projekt zeigt praktische Erfahrung in:
 - Enterprise Automation
 - Modellierung mit BPMN und DMN
 
-## Autor
-
-**Momen Jallad**  
-Informatikstudent an der TU Dortmund  
-GitHub: [Momen212](https://github.com/Momen212)
